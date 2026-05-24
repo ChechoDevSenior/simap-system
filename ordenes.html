@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SIMAP - Órdenes de vuelo">
+    <title>SIMAP - Órdenes de Vuelo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="fondo-verde">
+    <div class="container py-4 text-white">
+        <a href="dashboard.html" class="btn btn-light btn-sm mb-3" title="Volver al dashboard">
+            ← Atrás
+        </a>
+
+        <div class="d-flex align-items-center mb-4">
+            <img src="img/user.png" alt="Foto de usuario" class="mini-user">
+            <div class="ms-3">
+                <h6 class="mb-0">Sergio Peña</h6>
+                <small>Piloto</small>
+            </div>
+        </div>
+
+        <form id="ordenesForm" name="ordenesForm">
+            <div class="mb-3">
+                <label for="numeroOrden" class="form-label">Número de orden vuelo</label>
+                <input type="text" id="numeroOrden" class="form-control" placeholder="Ej: ORD-2026-001" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="itinerario1" class="form-label">Itinerario 1</label>
+                <input type="text" id="itinerario1" class="form-control" placeholder="Ej: Bogotá - Medellín" required>
+            </div>
+
+            <div class="mb-4">
+                <label for="itinerario2" class="form-label">Itinerario 2</label>
+                <input type="text" id="itinerario2" class="form-control" placeholder="Ej: Medellín - Cali">
+            </div>
+
+            <div class="d-flex justify-content-between gap-2 flex-wrap">
+                <button type="button" class="btn btn-light flex-grow-1" title="Ver registro de horas">
+                    Horas
+                </button>
+                <button type="button" class="btn btn-light flex-grow-1" title="Ver consumo de combustible">
+                    Combustible
+                </button>
+                <button type="button" class="btn btn-light flex-grow-1" title="Ver información de tripulación">
+                    Tripulación
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
