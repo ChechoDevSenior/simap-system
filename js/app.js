@@ -39,8 +39,8 @@ function obtenerUsuarioActual() {
     return {
         usuario: localStorage.getItem('usuario') || 'Usuario',
         nombre: 'Sergio Peña',
-        grado: 'Capitán',
-        cargo: 'Piloto'
+        grado: 'Subintendente',
+        cargo: 'Técnico Aeronáutico'
     };
 }
 
