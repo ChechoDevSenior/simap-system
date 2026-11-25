@@ -1,0 +1,11 @@
+# Archivos temporales de Windows
+Thumbs.db
+Desktop.ini
+
+# Archivos del editor
+.vscode/
+*.code-workspace
+
+# Archivos temporales
+*.log
+*.tmp
