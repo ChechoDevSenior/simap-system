@@ -50,16 +50,26 @@ function obtenerUsuarioActual() {
  */
 function buscarRegistros(termino) {
     const registros = document.querySelectorAll('.registro');
+    const mensajeSinResultados = document.getElementById('mensajeSinResultados');
     const terminoLower = termino.toLowerCase();
+
+    let resultadosEncontrados = 0;
 
     registros.forEach(registro => {
         const texto = registro.textContent.toLowerCase();
+
         if (texto.includes(terminoLower)) {
             registro.style.display = 'block';
+            resultadosEncontrados++;
         } else {
             registro.style.display = 'none';
         }
     });
+
+    if (mensajeSinResultados) {
+        mensajeSinResultados.style.display =
+            resultadosEncontrados === 0 ? 'block' : 'none';
+    }
 }
 
 // Inicializar cuando el DOM esté listo
